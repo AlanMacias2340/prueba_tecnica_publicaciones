@@ -1,8 +1,16 @@
 import IconeSearch from "../../../assets/search_icone.png";
+import { useContext } from "react";
+import { PublicationContext } from "../publication";
 
 type Props = {};
 
 function Filter({}: Props) {
+  const {toggleSearch} = useContext(PublicationContext);
+
+  const handleSearch = (e: any) => {
+    toggleSearch && toggleSearch(e);
+  };
+
   return (
     <div className="flex justify-around items-center w-full">
       <div className="flex justify-center items-center gap-3 p-5 w-[60%]">
@@ -11,6 +19,7 @@ function Filter({}: Props) {
           type="text"
           placeholder="Buscador"
           className="border-2 border-blue-950 rounded-md p-1 w-[100%]"
+          onChange={handleSearch}
         />
         <img src={IconeSearch} alt="btn_search" className="min-h-10 min-w-10 max-w-11 max-h-11 cursor-pointer" />
       </div>
