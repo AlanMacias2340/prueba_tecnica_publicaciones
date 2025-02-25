@@ -1,13 +1,15 @@
-import Publication from './publication/publication'
+import Publication from "./publication/publication";
+import NavBar from "./components/navbar";
 
-type Props = {}
+type Props = {};
 
 function App({}: Props) {
   return (
     <>
-        <Publication />
+      <NavBar />
+      <Publication />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
