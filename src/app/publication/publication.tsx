@@ -1,4 +1,6 @@
 import { createContext, useEffect } from "react";
+import Filter  from "./components/filter";
+
 
 type PublicationContextProps = {};
 
@@ -17,7 +19,7 @@ function Publication({}: Props) {
 
   return (
     <PublicationContext.Provider value={{}}>
-      Hola mundo
+      <Filter />
     </PublicationContext.Provider>
   );
 }
