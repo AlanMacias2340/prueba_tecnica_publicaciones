@@ -56,7 +56,7 @@ function PostDetail({}: Props) {
 
 
   if (!post) {
-    return <div>Cargando...</div>;
+    return <div className="w-dvw h-dvh text-blue-950 font-black text-3xl flex justify-center items-center">Cargando...</div>;
   } else {
     return (
       <div className="p-6 h-full w-full">
