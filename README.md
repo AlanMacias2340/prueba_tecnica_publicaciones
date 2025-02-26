@@ -37,3 +37,11 @@ npm run dev
 
 Una vez ejecutado el proyecto de manera local, para acceder a las publicaciones se debe redireccionar mediante la navegación implementada en el proyecto a la pestaña de "publicaciones".
 
+
+## Posibles Conflictos con el proyecto
+
+Si las dependencias no se instalan correctamente o no deja ejecutar el proyecto, se aconseja eliminar el archivo package-lock.json y volver a ejecutar el siguiente codigo:
+
+```bash
+npm install
+```
