@@ -5,11 +5,16 @@ import { PublicationContext } from "../publication";
 type Props = {};
 
 function Filter({}: Props) {
-  const {toggleSearch} = useContext(PublicationContext);
+  const {toggleSearch, toggleSort} = useContext(PublicationContext);
 
   const handleSearch = (e: any) => {
     toggleSearch && toggleSearch(e);
   };
+
+  const handleSort = (e: any) => {
+    toggleSort && toggleSort(e);
+  }
+
 
   return (
     <div className="flex justify-around items-center w-full">
@@ -30,6 +35,7 @@ function Filter({}: Props) {
           name="order"
           id="order"
           className="border-2 border-blue-950 rounded-md p-1"
+          onChange={handleSort}
         >
           <option value="asc">A - Z</option>
           <option value="desc">Z - A</option>
