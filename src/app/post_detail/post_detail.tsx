@@ -54,10 +54,6 @@ function PostDetail({}: Props) {
     fetchComments();
   }, [id]);
 
-  useEffect(() => {
-    console.log(post);
-    console.log(comments);
-  }, [post]);
 
   if (!post) {
     return <div>Cargando...</div>;
