@@ -1,6 +1,6 @@
 # Proyecto React prueba técnica
 
-## Ejecución del codigo
+## Ejecución del código
 
 ### Requisitos Previos
 
@@ -27,7 +27,7 @@ npm install
 
 ### Ejecución del codigo
 
-Despues de intalar las dependecias es posible ejecutar el proyecto mediante el siguiente codigo:
+Después de instalar las dependencias es posible ejecutar el proyecto mediante el siguiente código:
 
 ```bash
 npm run dev
@@ -35,12 +35,11 @@ npm run dev
 
 ## Acceder a las publicaciones
 
-Una vez ejecutado el proyecto de manera local, para acceder a las publicaciones se debe redireccionar mediante la navegación implementada en el proyecto a la pestaña de "publicaciones".
-
+Una vez ejecutado el proyecto de manera local, para acceder a las publicaciones se debe direccionalidad mediante la navegación implementada en el proyecto a la pestaña de "publicaciones".
 
 ## Posibles Conflictos con el proyecto
 
-Si las dependencias no se instalan correctamente o no deja ejecutar el proyecto, se aconseja eliminar el archivo package-lock.json y volver a ejecutar el siguiente codigo:
+Si las dependencias no se instalan correctamente o no deja ejecutar el proyecto, se aconseja eliminar el archivo package-lock.json y volver a ejecutar el siguiente código:
 
 ```bash
 npm install
