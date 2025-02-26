@@ -1,4 +1,4 @@
-import IconeSearch from "../../../assets/search_icone.png";
+// import IconeSearch from "../../../assets/search_icone.png";
 import { useContext } from "react";
 import { PublicationContext } from "../publication";
 
@@ -26,7 +26,7 @@ function Filter({}: Props) {
           className="border-2 border-blue-950 rounded-md p-1 w-[100%]"
           onChange={handleSearch}
         />
-        <img src={IconeSearch} alt="btn_search" className="min-h-10 min-w-10 max-w-11 max-h-11 cursor-pointer" />
+        {/* <img src={IconeSearch} alt="btn_search" className="min-h-10 min-w-10 max-w-11 max-h-11 cursor-pointer" /> */}
       </div>
       <div className="w-[30%] flex justify-center items-center gap-5 p-5">
         {/**filtrar por orden alfabetico */}
